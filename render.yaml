@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: render-vscode
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: PASSWORD
+        sync: false
